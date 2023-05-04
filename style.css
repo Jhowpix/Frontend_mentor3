@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Dancing+Script&family=Overpass:wght@400;700&family=Rajdhani:wght@300;400;500&display=swap');
+
+*{
+  margin: 0;padding: 0;box-sizing: 0;
+  font-family: 'Overpass', sans-serif;
+}
+
+body{
+  background-color:hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%) ;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(213, 19%, 18%);
+  width: 410px ;
+  height: 410px;
+  border-radius: 30px;
+  position: absolute;
+  z-index: 1;
+}
+
+.icon{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: hsl(217, 12%, 22%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn{
+   background-color: hsl(217, 12%, 22%);
+   color: hsl(217, 12%, 63%) ;
+   width: 46px;
+   height: 46px;
+   border-radius: 50%;
+   border: none;
+   margin: 0px 13px 30px 13px;
+   cursor: pointer;
+}
+
+.btn:focus{
+  color: hsl(0, 0%, 100%) ;
+  background-color: hsl(217, 12%, 63%);
+}
+
+.btn:hover{
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.number{
+  display: flex;
+  width: 410px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnSub{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.sub{
+  width: 330px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%) ;
+  font-size: 14px;
+  border: solid 1px black;
+  letter-spacing: 1mm;
+  cursor: pointer;
+}
+
+.sub:focus{
+  color: hsl(0, 0%, 100%) ;
+  background-color: hsl(217, 12%, 63%);
+}
+
+.sub:hover{
+  background-color:  hsl(0, 0%, 100%) ;
+  color: hsl(25, 97%, 53%) ;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  margin: 40px, 50px, 0px, 50px;
+  width: 100%;
+  height: auto;
+}
+
+.icon{
+  margin: 40px 0px 30px 40px;
+}
+
+.title{
+ margin-left: 40px;
+}
+
+#firstText{
+  margin: 20px 40px 30px 40px;
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    scale: 0.8;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  body {
+    scale: 0.7;
+  }
+}
